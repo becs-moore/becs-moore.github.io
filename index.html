@@ -14,13 +14,13 @@
     <!-- Skip to main content link for keyboard users -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <nav class="nav" role="navigation" aria-label="Main navigation">
+    <nav class="nav nav-minimal" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="index.html" class="logo" aria-label="Becca Moore - Home">
+            <a href="#hero" class="logo" aria-label="Becca Moore - Home">
                 <img src="assets/my_logo.png" alt="Becca Moore" class="logo-image">
             </a>
             <ul class="nav-links">
-                <li><a href="projects.html">Work</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -28,7 +28,8 @@
     </nav>
 
     <main id="main-content">
-        <section class="hero" aria-labelledby="hero-title">
+        <!-- Hero Section -->
+        <section id="hero" class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
                 <h1 id="hero-title" class="hero-title">
                     <span class="title-line">Product designer</span>
@@ -39,10 +40,71 @@
                     I create experiences that balance user needs with business goals, 
                     focusing on design systems and conversion-driven interfaces.
                 </p>
-                <a href="projects.html" class="cta-button">View my work</a>
+                <a href="#work" class="cta-button">View my work</a>
             </div>
         </section>
 
+        <!-- Projects Section -->
+        <section id="work" class="projects-section" aria-labelledby="work-heading">
+            <div class="section-header">
+                <h2 id="work-heading">Selected work</h2>
+                <p class="section-description">Designing scalable solutions that drive growth and delight users</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-aos="fade-up">
+                    <a href="clover-shop.html" class="project-link">
+                        <div class="project-image">
+                            <img src="assets/hero-shop.jpg" alt="Clover Shop project hero image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Clover /shop</h3>
+                            <p>Launching Clover's first direct sales channel with a solution finder that guides merchants to the right hardware</p>
+                            <div class="project-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">UX Design</span>
+                                <span class="tag">Design Systems</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Add more project cards here -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#" class="project-link">
+                        <div class="project-image placeholder">
+                            <div class="placeholder-text">Project 2</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title</h3>
+                            <p>Brief description of the project and the problem it solved</p>
+                            <div class="project-tags">
+                                <span class="tag">Product Design</span>
+                                <span class="tag">Mobile</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="project-link">
+                        <div class="project-image placeholder">
+                            <div class="placeholder-text">Project 3</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title</h3>
+                            <p>Brief description of the project and the problem it solved</p>
+                            <div class="project-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">SaaS</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
         <section id="about" class="about-section" aria-labelledby="about-heading">
             <div class="about-container">
                 <div class="about-text">
@@ -62,12 +124,13 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="contact-section" aria-labelledby="contact-heading">
             <div class="contact-container">
                 <h2 id="contact-heading">Let's connect</h2>
                 <p class="contact-text">I'm always open to discussing new projects and opportunities.</p>
                 <div class="contact-links">
-                    <a href="/cdn-cgi/l/email-protection#cbb2a4beb9e5aea6aaa2a78baeb3aaa6bba7aee5a8a4a6" class="contact-link" aria-label="Send me an email">Email</a>
+                    <a href="mailto:your.email@example.com" class="contact-link" aria-label="Send me an email">Email</a>
                     <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on LinkedIn (opens in new tab)">LinkedIn</a>
                     <a href="https://dribbble.com/yourprofile" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my work on Dribbble (opens in new tab)">Dribbble</a>
                 </div>
@@ -79,4 +142,6 @@
         <p>&copy; 2026 Becca Moore. Designed and built with care.</p>
     </footer>
 
-    <scri
+    <script src="script.js"></script>
+</body>
+</html>

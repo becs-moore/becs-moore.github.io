@@ -54,12 +54,22 @@ function updateActiveNav() {
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
+                // Handle both #work and #about/#contact anchor links
+                const linkHref = link.getAttribute('href');
+                if (linkHref === `#${sectionId}`) {
                     link.classList.add('active');
                 }
             });
         }
     });
+    
+    // Special handling for hero section at top
+    if (scrollY < 100) {
+        navLinks.forEach(link => link.classList.remove('active'));
+    }
 }
 
 window.addEventListener('scroll', updateActiveNav);
+
+// Update on page load
+updateActiveNav();
