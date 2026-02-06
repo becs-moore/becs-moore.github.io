@@ -167,6 +167,19 @@ select:focus-visible {
     font-weight: 600;
     color: var(--color-primary);
     letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.logo:hover .logo-image {
+    opacity: 0.8;
 }
 
 .nav-links {
@@ -755,7 +768,7 @@ select:focus-visible {
         font-size: 0.85rem;
     }
     
-    .logo {
-        font-size: 1.25rem;
+    .logo-image {
+        height: 32px;
     }
 }
