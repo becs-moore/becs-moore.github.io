@@ -351,13 +351,125 @@ select:focus-visible {
 }
 
 /* ========================================
-   One-Page Homepage - Projects Section
+   One-Page Homepage - Selected Projects Section
    ======================================== */
 
-.projects-section {
+.selected-projects-section {
     padding: var(--spacing-xl) var(--spacing-md);
     background: var(--color-bg);
 }
+
+.selected-projects-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.project-card-small {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.project-card-small[data-aos-delay="100"] {
+    animation-delay: 0.2s;
+}
+
+.project-card-small[data-aos-delay="200"] {
+    animation-delay: 0.4s;
+}
+
+.project-image-small {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
+    background: var(--color-border);
+}
+
+.project-image-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-link:hover .project-image-small img {
+    transform: scale(1.05);
+}
+
+.project-image-small.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+}
+
+.project-info-small h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--color-primary);
+}
+
+.project-info-small p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.more-work-button-container {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* ========================================
+   Full Projects Page
+   ======================================== */
+
+.projects-main {
+    margin-top: 80px;
+}
+
+.projects-hero {
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+    background: var(--color-surface);
+    text-align: center;
+}
+
+.projects-hero-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.projects-hero-content p {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+}
+
+.projects-grid-section {
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.projects-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* ========================================
+   One-Page Homepage - Projects Section (REMOVED - replaced with selected projects)
+   ======================================== */
 
 .section-header {
     max-width: var(--max-width);
@@ -548,7 +660,7 @@ select:focus-visible {
     color: var(--color-text-secondary);
 }
 
-.project-info h3 {
+.project-info h2 {
     font-family: var(--font-display);
     font-size: 1.75rem;
     font-weight: 600;
@@ -850,6 +962,12 @@ select:focus-visible {
     .contact-section,
     .project-content {
         padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
+    .selected-projects-grid {
+        grid-template-columns: 1fr;
+        padding: 0 var(--spacing-sm);
+        gap: var(--spacing-md);
     }
     
     .projects-grid {
