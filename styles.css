@@ -887,7 +887,7 @@ figcaption {
   color: #e3037a;
   text-align: left;
   padding: 6px 0;
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 20px;
   position: relative;
 }
@@ -938,17 +938,6 @@ figcaption::before {
     margin: var(--spacing-md) 0;
 }
 
-/* Edge-to-edge image that breaks out of container */
-.edge-to-edge-image {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    border-radius: 0;
-    margin: var(--spacing-md) 0;
-}
-
 /* Small left-aligned image at 65% width */
 .content-image-small-left {
     width: 65%;
@@ -963,7 +952,7 @@ figcaption::before {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--spacing-lg) calc(50vw - 400px);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 0;
 }
 
 /* Plum background section variant */
@@ -983,7 +972,6 @@ figcaption::before {
 .content-section.plum figcaption {
     color: #ffffff;
 }
-
 
 /* Summary section (Role & Impact) */
 .summary-section {
@@ -1012,7 +1000,7 @@ figcaption::before {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Bulleted and numbered lists inside content sections */
+/* Lists inside content sections */
 .content-section ul,
 .content-section ol {
     margin: 0 0 var(--spacing-sm) 1.5rem;
