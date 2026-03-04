@@ -882,6 +882,7 @@ figcaption {
   padding: 6px 0;
   border-top: 1px solid #808;
   font-style: italic;
+  margin-bottom: 20px; 
 }
 
 .content-section {
