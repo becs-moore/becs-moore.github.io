@@ -543,6 +543,7 @@ select:focus-visible {
 
 .projects-grid-section {
     padding: var(--spacing-lg) var(--spacing-md);
+    background: #ffffff;
 }
 
 .projects-grid {
@@ -862,9 +863,13 @@ select:focus-visible {
 }
 
 .full-width-image {
-    width: 100%;
-    border-radius: 8px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
     margin-bottom: var(--spacing-lg);
+    display: block;
 }
 
 figure {
