@@ -865,6 +865,25 @@ select:focus-visible {
     margin-bottom: var(--spacing-lg);
 }
 
+figure {
+  display: inline-block;
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  padding: 6px 0;
+  border-top: 1px solid #ddd;
+  font-style: italic;
+}
+
 .content-section {
     margin-bottom: var(--spacing-lg);
 }
