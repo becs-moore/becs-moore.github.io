@@ -880,7 +880,7 @@ figcaption {
   color: #e3037a;
   text-align: left;
   padding: 6px 0;
-  border-top: 1px solid #808080;
+  border-top: 1px solid #ddd;
   font-style: italic;
 }
 
