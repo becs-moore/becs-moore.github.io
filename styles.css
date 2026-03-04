@@ -8,7 +8,7 @@
     --color-secondary: #3d3d3d;        /* 9.7:1 contrast on white - AAA */
     --color-accent: #e3037a;           /* Brand color - use carefully */
     --color-accent-dark: #b8025f;      /* 4.56:1 contrast on white - AA compliant */
-    --color-bg: #fafaf9;
+    --color-bg: #ffffff;
     --color-surface: #ffffff;
     --color-border: #d1d1d1;           /* 3:1 contrast for UI components */
     --color-text: #1a1a1a;             /* Primary text - AAA */
