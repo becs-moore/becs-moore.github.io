@@ -376,7 +376,7 @@ select:focus-visible {
 
 .selected-projects-section {
     padding: var(--spacing-md) var(--spacing-md) var(--spacing-xl);
-    background: var(--color-bg);
+    background: #ffffff;
 }
 
 .selected-projects-grid {
