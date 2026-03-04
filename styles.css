@@ -812,10 +812,21 @@ select:focus-visible {
     color: var(--color-accent-dark);
 }
 
+.project-header h5 {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+}
+
 .project-header h1 {
     font-family: var(--font-display);
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 600;
+    line-height: 1.05;
     margin-bottom: var(--spacing-sm);
     color: var(--color-primary);
 }
@@ -824,7 +835,7 @@ select:focus-visible {
     font-size: 1.25rem;
     line-height: 1.6;
     color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .project-meta {
@@ -833,6 +844,7 @@ select:focus-visible {
     flex-wrap: wrap;
     padding-top: var(--spacing-md);
     border-top: 1px solid var(--color-border);
+    margin-top: var(--spacing-sm);
 }
 
 .meta-item {
@@ -842,10 +854,12 @@ select:focus-visible {
 }
 
 .meta-label {
-    font-size: 0.85rem;
-    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
 }
 
 .meta-value {
