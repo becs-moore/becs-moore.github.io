@@ -887,9 +887,22 @@ figcaption {
   color: #e3037a;
   text-align: left;
   padding: 6px 0;
-  border-top: 1px solid #808;
   font-style: italic;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  position: relative;
+}
+
+figcaption::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 1px;
+  background: #808;
+  margin-bottom: 6px;
+}
+
+.content-section.plum figcaption::before {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .content-section {
@@ -971,9 +984,6 @@ figcaption {
     color: #ffffff;
 }
 
-.content-section.plum figcaption {
-    border-top-color: rgba(255, 255, 255, 0.3);
-}
 
 /* Summary section (Role & Impact) */
 .summary-section {
