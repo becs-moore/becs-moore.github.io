@@ -224,10 +224,10 @@ select:focus-visible {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;   /* ADD THIS */
+    justify-content: left;   /* ADD THIS */
     padding: var(--spacing-xl) var(--spacing-md);
     margin-top: 80px;
-    text-align: center;        /* ADD THIS */
+    text-align: left;        /* ADD THIS */
 }
 
 .hero-content {
