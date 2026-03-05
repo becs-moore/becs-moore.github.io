@@ -994,6 +994,17 @@ figcaption::before {
     margin: var(--spacing-md) 0;
 }
 
+/* Full browser-width image inside a container */
+.content-image-full-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 0;
+    margin: var(--spacing-md) 0;
+}
+
 /* Small left-aligned image (65% width) */
 .content-image-small-left {
     width: 65%;
