@@ -864,17 +864,22 @@ select:focus-visible {
 /* Hero image sits outside content-container as direct child of section */
 .project-content {
     padding: 0 0 var(--spacing-lg) 0;
+    overflow: visible;
 }
 
 .content-container {
     max-width: var(--max-width-narrow);
     margin: 0 auto;
     padding: var(--spacing-lg) var(--spacing-md);
+    overflow: visible;
 }
 
-/* Full browser-width image - direct child of section, no container to fight */
+/* Full browser-width image - breaks out of any container */
 .full-width-image {
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     border-radius: 0;
     margin-bottom: 0;
@@ -990,17 +995,6 @@ figcaption::before {
 /* No rounded corners on project images */
 .content-image {
     width: 100%;
-    border-radius: 0;
-    margin: var(--spacing-md) 0;
-}
-
-/* Full browser-width image inside a container */
-.content-image-full-bleed {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
     border-radius: 0;
     margin: var(--spacing-md) 0;
 }
