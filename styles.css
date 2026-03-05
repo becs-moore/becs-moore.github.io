@@ -875,6 +875,27 @@ select:focus-visible {
 }
 
 /* Full browser-width image - breaks out of any container */
+/* Full-width figure with caption - breaks out of container */
+.full-width-figure {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: var(--spacing-md) 0;
+}
+
+.full-width-figure img {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+}
+
+.full-width-figure figcaption {
+    max-width: var(--max-width-narrow);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
 .full-width-image {
     width: 100vw;
     position: relative;
