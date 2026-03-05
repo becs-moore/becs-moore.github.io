@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case study: Sign-up code receipts - Turning Clover receipt touchpoints into loyalty drivers with scannable sign-up codes.">
+    <title>Concierge travel portal - Becca Moore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Becca Moore - Home">
+                <img src="assets/my_logo.png" alt="Becca Moore" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="projects.html">Work</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="project-detail">
+        <section class="project-header">
+            <div class="project-header-content">
+                <a href="projects.html" class="back-link" aria-label="Back to all projects">← Back to projects</a>
+                <h5>Concierge Travel Portal</h5>
+                <h1>Bringing together scalable technology and white-glove travel service for clinical trials.</h1>
+                <p class="project-subtitle">
+                    When Greenphire acquired Clincierge, we gained a powerful travel model—but no scalable way to share it. I transformed their internal tool into the <strong>Concierge Travel Portal: a secure, intuitive space for Coordinators and Travel Agents to manage complex participant travel without relying on email.</strong>
+                </p>
+                <p class="project-subtitle">
+                    This portal helped launch a white-glove service tier and address the top barrier to clinical trial participation—travel. The work was high-profile and led to a pending patent, where I’m listed as a co-inventor.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-content">
+
+            <!-- Hero image OUTSIDE content-container so it fills full browser width -->
+            <img src="assets/header-travel-portal.png" alt="xxx." class="full-width-image">
+
+            <div class="content-container">
+
+                <!-- The challenge -->
+                <div class="content-section">
+                    <h2>The challenge</h2>
+                    <p>
+                        <strong>Greenphire</strong> builds tools that streamline the operational side of clinical trials—site payments, participant reimbursements, and travel logistics. Newly acquired <strong>Clincierge</strong> brought deep expertise in high-touch travel support for patients in rare and ultra-rare disease studies. Our challenge: design a seamless experience that merged Greenphire’s tech-driven platform with Clincierge’s human-centered services.
+                    </p>
+                    <p>
+                        At the center of it all was <strong>PX,</strong> Clincierge’s internal tool built for trained Coordinators. <strong>The goal was to turn it into a secure, easy-to-use portal that could also support two new external roles: Travel Agents and Site Staff.</strong> Since we couldn’t rely on training, the experience had to be intuitive from the start. That meant rethinking how information was organized, redefining trip states, and designing clear, helpful interfaces to guide users through complex workflows.
+                    </p>
+                </div>
+
+                <!-- Web redemption - gray background -->
+                <div class="content-section gray">
+                    <h3>Web redemption</h3>
+                    <p>
+                        To support future merchant profiles, I designed a simple MVP: the /code page. It focused on redeeming sign-up codes, showing merchant info and receipt logic post-claim. A card-style UI gave users a preview of the Perka app experience.
+                    </p>
+                </div>
+                <img src="assets/image-receipt-web.png" alt="Screenshots of the /code web page MVP showing merchant information, sign-up code redemption flow, and a card-style preview of the Perka app experience" class="full-width-image">
+
+                <!-- App redemption - plum background, flush against gray -->
+                <div class="content-section plum">
+                    <h3>App redemption</h3>
+                    <p>
+                        Perka's lazy registration lets users earn points before creating an account, but this added friction to code redemption. I redesigned the landing screen with a clear app overview and a prominent "Scan Code" CTA. A new QR icon in the header and profile screen ensures all users can easily redeem codes—signed in or not.
+                    </p>
+                </div>
+                <img src="assets/image-receipt-app.png" alt="Mobile app screens showing the redesigned Perka landing screen with Scan Code CTA, updated header with QR icon, and profile screen code redemption entry point" class="full-width-image">
+
+                <!-- Research -->
+                <div class="content-section">
+                    <h2>Research</h2>
+                    <h3>User Interviews</h3>
+                    <p>
+                        After launching sign-up code receipts, the design team conducted user research interviews to evaluate the feature's performance. We worked with a few highly engaged Perka merchants near our NYC office and conducted several user interviews with their customers and clerks to gather insights on the receipt codes.
+                    </p>
+                    <img src="assets/image-receipt-research-1.png" alt="Photo from a user research session showing a customer and clerk at a Perka merchant location discussing the sign-up code receipt experience" class="content-image">
+
+                    <h4>Key take-aways</h4>
+                    <ul>
+                        <li>Users felt that the receipt was something they had to keep since it looked like an actual punchcard (with punches). Many said they wouldn't keep it since they have too much already in their wallet.</li>
+                        <li>More compelled by the welcome bonus than earned points towards a perk.</li>
+                        <li>Not clear on how to redeem an earned welcome bonus or perk.</li>
+                        <li>Confusion around something that is earned and something that is on the way to be earned.</li>
+                    </ul>
+
+                    <img src="assets/image-receipt-research-2.png" alt="Photo of user research notes and sticky notes on a wall summarizing themes and insights from customer and clerk interviews about the Perka receipt codes" class="content-image">
+
+                    <h4>Additional research</h4>
+                    <p>After conducting research with our internal support team and reviewing Zendesk tickets and data from merchants with high receipt activity, we identified three types of behavior:</p>
+                    <ol>
+                        <li>Customer starts by using receipt for some points, then regularly checks in. Occasionally claims a point with a receipt, possibly due to forgetfulness or not having their phone (intended feature use).</li>
+                        <li>Customer uses receipts to earn points, and checks in only to redeem a perk.</li>
+                        <li>Customer uses receipts only, and never redeems perks they've earned.</li>
+                    </ol>
+                </div>
+
+                <!-- Design improvements -->
+                <div class="content-section">
+                    <h2>Design improvements</h2>
+                    <h3>System design</h3>
+                    <ul>
+                        <li>Simplify logic: when available, only show earned welcome bonus until the user scans the code and can see the cards displayed in the app</li>
+                        <li>Remove /start CTA for signing up through the website</li>
+                        <li>Highlight action of "checking in" on the Perka app</li>
+                        <li>Update copy on receipts to better clarify when an offer is not yet available</li>
+                        <li>Remove punch icons to look less like an actual punchcard</li>
+                        <li>Include a Clover Mini-sized receipt for the launch of that new device</li>
+                    </ul>
+                    <img src="assets/image-receipt-research-3.png" alt="Updated sign-up code receipt designs showing simplified layout, removal of punch icons, improved offer copy, and new Clover Mini-sized receipt format" class="content-image">
+                </div>
+
+                <!-- Specific errors - plum background -->
+                <div class="content-section plum">
+                    <h3>Specific errors and rate limiting</h3>
+                    <p>
+                        To reduce frustration during code redemption, I designed clearer error messages that explain issues and offer next steps. We also added a daily limit of three code claims per account to deter abuse. These updates improved trust, educated users, and protected merchants—while guiding more people toward the intended app experience.
+                    </p>
+                    <img src="assets/image-receipt-research-4.png" alt="Mobile screens showing redesigned error states for sign-up code redemption, including specific error messages and rate limiting notifications" class="content-image">
+                </div>
+
+                <!-- And beyond -->
+                <div class="content-section">
+                    <h2>…and beyond</h2>
+                    <img src="assets/image-receipt-beyond.png" alt="Screens showing the evolution of Perka receipts into Clover's app-less customer experience, including real-time receipt promotions and SMS/MMS enrollment pathways" class="content-image">
+                    <p>
+                        This initiative enabled key innovations including real-time receipt promotions and SMS/MMS enrollment pathways, ultimately evolving into Clover's rebranded "app-less" customer experience.
+                    </p>
+                </div>
+
+                <!-- Summary: Role & Impact -->
+                <div class="summary-section">
+                    <div>
+                        <h5>Role</h5>
+                        <p><strong>Senior Product Designer</strong></p>
+                        <p>As the sole Product Designer, I led end-to-end design—user research, ideation, wireframing, high-fidelity mockups, and testing—collaborating with cross-functional teams across app, web, and POS systems.</p>
+                        <p>This team also included a Product Manager, two SQA Analysts, a Senior Software Engineer, two Android Developers, and an iOS Developer, with support from our Design Director.</p>
+                    </div>
+                    <div>
+                        <h5>Impact</h5>
+                        <p>By simplifying the enrollment process through Clover receipt codes, we saw a marked increase in merchants creating and actively promoting loyalty programs. This strategic enhancement directly boosted customer enrollment rates and Perka app downloads. The intuitive redesign created measurable increases in platform engagement across both merchant and customer segments, strengthening Perka's market position.</p>
+                    </div>
+                </div>
+
+                <nav class="project-nav" aria-label="Project navigation">
+                    <a href="projects.html" class="nav-button">← Back to all projects</a>
+                    <a href="#" class="nav-button">Next project →</a>
+                </nav>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2026 Becca Moore</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
