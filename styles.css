@@ -884,6 +884,10 @@ select:focus-visible {
     margin: var(--spacing-md) 0;
 }
 
+.full-width-figure.flush-top {
+    margin-top: 0;
+}
+
 .full-width-figure img {
     width: 100%;
     display: block;
@@ -1034,7 +1038,7 @@ figcaption::before {
     padding-top: var(--spacing-lg);
     border-top: 1px solid var(--color-border);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--spacing-lg);
 }
 
