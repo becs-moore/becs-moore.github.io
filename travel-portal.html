@@ -145,7 +145,7 @@
                         <p>
                             I began with wireframes to shape the overall structure of the Dashboard and Trip Page—focused on surfacing the right information at the right time.                     
                         </p>
-                        <img src="assets/xxx.png" alt="xxx" class="content-image">
+                        <img src="assets/image-travel-portal-design-1.png" alt="xxx" class="content-image">
                         <figcaption>
                             Sketched early wireframes to establish layout, content hierarchy, and key component additions, like the Messaging Center and Task Tiles for future thinking                    
                         </figcaption>
@@ -156,11 +156,11 @@
                         <p>
                            Through iterative design, I moved into high-fidelity mockups that prioritized clarity, hierarchy, and ease of navigation for both Travel Agents and Coordinators managing high-stakes logistics.
                         </p>
-                        <img src="assets/xxx.png" alt="xxx" class="content-image">
+                        <img src="assets/xxx.png" alt="image-travel-portal-design-2" class="content-image">
                         <figcaption>
                             Designed final UI for the Travel Agent Dashboard and Trip Pages, tailored to each role-specific workflow and built to meet WCAG 2.1 AA accessibility standards                        
                         </figcaption>
-                        <img src="assets/xxx.png" alt="xxx" class="content-image">
+                        <img src="assets/image-travel-portal-design-3.png" alt="xxx" class="content-image">
                         <figcaption>
                             xxx                        
                         </figcaption>
@@ -176,43 +176,42 @@
                         </p>
                     </div>
                 </div>
-            
-            
-            
-<!-- STOPPED HERE! -->
 
-                    <h4>Additional research</h4>
-                    <p>After conducting research with our internal support team and reviewing Zendesk tickets and data from merchants with high receipt activity, we identified three types of behavior:</p>
-                    <ol>
-                        <li>Customer starts by using receipt for some points, then regularly checks in. Occasionally claims a point with a receipt, possibly due to forgetfulness or not having their phone (intended feature use).</li>
-                        <li>Customer uses receipts to earn points, and checks in only to redeem a perk.</li>
-                        <li>Customer uses receipts only, and never redeems perks they've earned.</li>
-                    </ol>
-                </div>
-
-                <!-- Design improvements -->
-                <div class="content-section">
-                    <h2>Design improvements</h2>
-                    <h3>System design</h3>
-                    <ul>
-                        <li>Simplify logic: when available, only show earned welcome bonus until the user scans the code and can see the cards displayed in the app</li>
-                        <li>Remove /start CTA for signing up through the website</li>
-                        <li>Highlight action of "checking in" on the Perka app</li>
-                        <li>Update copy on receipts to better clarify when an offer is not yet available</li>
-                        <li>Remove punch icons to look less like an actual punchcard</li>
-                        <li>Include a Clover Mini-sized receipt for the launch of that new device</li>
-                    </ul>
-                    <img src="assets/image-receipt-research-3.png" alt="Updated sign-up code receipt designs showing simplified layout, removal of punch icons, improved offer copy, and new Clover Mini-sized receipt format" class="content-image">
-                </div>
-
-                <!-- Specific errors - plum background -->
-                <div class="content-section plum">
-                    <h3>Specific errors and rate limiting</h3>
+                <!-- Image OUTSIDE content-container so it fills full browser width -->
+                <img src="assets/image-travel-portal-design-4.png" alt="xxx">
+                <div class="content-container">
+                    <div class="content-section">
+                        <figcaption>
+                            Built a responsive Messaging Center that adapts to trip progress and delivers both human and system-generated updates across roles                        
+                        </figcaption>
+                        <p>
+                            Although we didn’t have time for formal user testing before launch, I designed with validation in mind—using familiar interaction patterns and clear UX hierarchy to support first-time users. Future iterations will focus on usability testing of the messaging and task systems to refine and extend the experience.
+                        </p>
+                    </div>
+                 </div>  
+            
+            <!-- Specific errors - gray background -->
+            <div class="content-container">
+                <div class="content-section gray">
+                    <h2>Develop</h2>
                     <p>
-                        To reduce frustration during code redemption, I designed clearer error messages that explain issues and offer next steps. We also added a daily limit of three code claims per account to deter abuse. These updates improved trust, educated users, and protected merchants—while guiding more people toward the intended app experience.
+                        I finalized the design specs and interaction logic for the Travel Agent Dashboard and Messaging Center—reusing existing PX patterns where possible to keep development moving quickly. I applied the new, WCAG 2.1 AA accessible product palette I created in a separate epic, and built out a system message framework to keep communication clear and consistent. I also created a content matrix for system-generated messages based on trip state and urgency—used to define delivery rules, escalation logic, and consistent messaging across roles.                    
                     </p>
-                    <img src="assets/image-receipt-research-4.png" alt="Mobile screens showing redesigned error states for sign-up code redemption, including specific error messages and rate limiting notifications" class="content-image">
                 </div>
+            </div>
+
+            <!-- Image OUTSIDE content-container so it fills full browser width -->
+                <img src="assets/image-travel-portal-develop.png" alt="xxx">
+                <div class="content-container">
+                    <div class="content-section">
+                        <figcaption>
+                            Developed detailed specs for the Dashboard Trips Table, outlining logic, sorting rules, icon usage, and message behavior—optimized support Engineering and QA handoff, accessibility, and consistency                        
+                        </figcaption>
+                    </div>
+                 </div>  
+
+            <!-- STOPPED HERE! -->
+
 
                 <!-- And beyond -->
                 <div class="content-section">
